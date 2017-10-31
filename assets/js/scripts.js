@@ -21,3 +21,15 @@ if (typeof jQuery === 'undefined') {
   console.log('jQuery has loaded');
 }
 // Place any jQuery/helper plugins in here.
+
+//Owl settings
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items:1,
+    autoplay:false,
+    loop:true,
+    navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+    nav: true
+  });
+
+});

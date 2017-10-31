@@ -26,31 +26,88 @@
 <!-- wrapper -->
 <div class="wrapper">
   <header role="banner">
-    <div class="container">
-      <div class="row">
-      <div class="col-md-2">
-        <div class="logo">
-          <img src="img/logo.png" alt="">
+  	<div class="black_top">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-3">
+  					<ul class="social_links">
+  						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+  						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+  						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+  					</ul>
+  				</div>
+  				<div class="col-md-6">
+  					<div class="login_form">
+			          <input type="text" placeholder="Ім'я" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'" />
+			          <input type="text" placeholder="Пароль" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Пароль'" />
+			          <button class="submit"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+			        </div>
+			    </div>
+  				<div class="col-md-3">
+  					<input type="text" class="search" placeholder="Пошук по сайту" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Пошук по сайту'" />
+            <button class="submit_search"><i class="fa fa-search" aria-hidden="true"></i></button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+    <div class="second_row_header">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-2">
+          <div class="logo">
+            <img src="img/logo.png" alt="">
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <h1>Факультет менеджменту та інформаційної безпеки</h1>
-      </div>
-      <div class="col-md-4">
-        <div class="login_form">
-          <input type="text" placeholder="Ім'я">
-          <input type="text" placeholder="Пароль">
-          <button class="submit">Вхід</button>
+        <div class="col-md-10">
+          <nav class="nav_wrap">
+            <ul class="headnav">
+              <li><a href="#">Головна</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Новини</a></li>
+              <li><a href="#">Наша кафедра</a></li>
+              <li><a href="#">Розклад занять</a></li>
+              <li><a href="#">Вступнику</a></li>
+              <li><a href="#">Абітурієнту</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <div class="col-md-2">
-        <input type="text" class="search" placeholder="Пошук по сайту">
-      </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
   </header><!-- /header -->
 
   <section role="main">
+    <div class="owl-carousel">
+      <div><img src="img/owl_3.jpeg" alt="">
+        <div class="text_slide_wrap">
+          <h4>Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores odio, velit sint earum odit. Mollitia fugit reprehenderit corrupti tempore commodi est error dignissimos cupiditate dicta, debitis maxime autem neque unde.</p>
+          <button class="read_current_news">Детально</button>
+        </div>
+      </div>
+      <div><img src="img/owl_2.jpeg" alt="">
+        <div class="text_slide_wrap">
+          <h4>Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eos, dolore debitis amet aliquid, fugiat. Repudiandae similique recusandae unde hic odio fugiat totam quae, quo nihil illo architecto sunt dolore.</p>
+          <button class="read_current_news">Детально</button>
+        </div>
+      </div>
+      <div><img src="img/owl_1.jpeg" alt="">
+        <div class="text_slide_wrap">
+          <h4>Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam similique repellendus qui ab explicabo quae consequatur, autem rerum iure. Error quam nisi provident, eligendi cum fugiat quae cumque repudiandae!</p>
+          <button class="read_current_news">Детально</button>
+        </div>
+      </div>
+      <div><img src="img/owl_4.jpeg" alt="">
+        <div class="text_slide_wrap">
+          <h4>Lorem Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ea necessitatibus assumenda, suscipit, nemo sint officiis voluptatem tempore, odit ab culpa! Est, repellendus deserunt possimus, soluta veritatis nesciunt aperiam blanditiis.</p>
+          <button class="read_current_news">Детально</button>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
 
@@ -73,6 +130,7 @@
 </footer><!-- /footer -->
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>

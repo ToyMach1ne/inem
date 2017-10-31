@@ -33,3 +33,11 @@ $(document).ready(function(){
   });
 
 });
+
+
+$(document).ready(function(){
+  $(".owl-carousel-teacher").owlCarousel({
+    items:1,
+  });
+
+});

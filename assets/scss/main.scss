@@ -1234,6 +1234,290 @@ article {
   }
 }
 
+//Teacher page
+.teacher_page {
+  background-color: #333;
+  .teacher_wrap {
+    padding: 50px 0 100px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff; 
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      text-transform: uppercase;
+      color:#fff;
+      padding: 15px 0;
+    }
+    .t_container {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-wrap:wrap;
+      .col-md-3 {
+        margin-bottom: 20px;
+        .t_inner_wrap {
+          position: relative;
+          cursor: pointer;
+          z-index: 99;
+          transition:.4s all;
+          &:before {
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            font-family: FontAwesome;
+            content:'\f067';
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            color:#fff;
+            font-size: 40px;
+            font-weight: 300;
+            opacity: 0;
+            transition:.4s all;
+           }
+           .teacher_thumb_wrap {
+            img {
+            max-height: 320px;
+            height: 100%;
+          }
+          
+        }
+        .teacher_description {
+          padding: 10px;
+          position: absolute;
+          bottom:0;
+          background-color: rgba(0, 0, 0, 0.8);
+          color:#fff;
+          transition:.4s all;
+        }
+        &:hover {
+          &:before {
+            opacity:1;
+          }
+          .teacher_description {
+            opacity:0;
+          }
+        }
+        }
+      }
+    }
+  }
+  .another_teachers_inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    color:#fff;
+    padding: 15px 0;
+    p {
+      font-size: 18px;
+      margin-right: 30px;
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+    a {
+      padding: 10px 15px;
+      color:#fff;
+      border:1px solid #fff;
+      font-size: 18px;
+      position: relative;
+      &:before {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(255, 255, 255, 0.1);
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transform-origin: 0 50%;
+                        transform-origin: 0 50%;
+                        -webkit-transition-property: transform;
+                        transition-property: transform;
+                        -webkit-transition-duration: 0.3s;
+                        transition-duration: 0.3s;
+                        -webkit-transition-timing-function: ease-out;
+                        transition-timing-function: ease-out;
+                  }
+                  &:hover {
+                    text-decoration: none;
+                    &:before {
+                      transform: scaleX(1);
+                    }
+                  }
+    }
+  }
+  .modal_teacher {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    .teach_form_wrap {
+      width: 50%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-wrap:wrap;
+      background-color: rgba(255, 255, 255, 0.75);
+      position: relative;
+      .close_teacher {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 2%;
+        top:2%;
+        font-size: 24px;
+        color:#000;
+        transition:.3s all;
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+      .img_inner {
+        width: 50%;
+        padding: 15px;
+        img {
+          max-height: 525px;
+          height: 100%;
+        }
+      }
+      .right_content {
+        width: 50%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4 {
+          font-size: 22px;
+        }
+        p {
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+
+//Contacts page
+.contacts_page {
+  background-color: #333;
+  .contacts_inner {
+    padding-bottom:100px;
+    background-image: url(../img/vntu_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    h1 {
+      font-size: 26px;
+      text-transform: uppercase;
+      text-align: center;
+      color:#333;
+      padding: 15px 0;
+      margin-bottom: 10px;
+    }
+    .contacts_wraper {
+          position: relative;
+          padding: 30px 0 100px 0;
+          border-bottom: 5px solid #333;
+          &:before {
+            display: block;
+            content:'';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.75);
+            top:0;
+          }
+          .col-md-6 {
+            ul {
+              li {
+                list-style-type: none;
+                padding: 5px;
+                font-size: 18px;
+                color:#333;
+                a {
+                  color:#333;
+                  &:hover {
+                    text-decoration: none;
+                    color:#477dca;
+                  }
+                }
+                span {
+                  padding-right: 10px;
+                }
+              }
+            }
+            .form_wrap {
+              form {
+                span {
+                  display: block;
+                  margin-bottom: 5px;
+                  min-height: 30px;
+                  line-height: 1.8;
+                  input {
+                    width: 64%;
+                    height: 30px;
+                    float: right;
+                    padding: 5px;
+                    transition:.3s all;
+                    &:focus {
+                      outline: none;
+                      background-color: #ddd;
+                      border:1px solid #fff;
+                    }
+                  }
+                }
+                textarea {
+                  float: right;
+                  font-size: 14px;
+                  padding:10px 0 0 10px;
+                  overflow-x: hidden;
+                  transition:.3s all;
+                  &:focus {
+                    outline: none;
+                    background-color: #ddd;
+                    border:1px solid #fff;
+                  }
+                }
+                button {
+                  position: absolute;
+                  right: 3%;
+                  bottom:-50px;
+                  background: transparent;
+                  border:1px solid #333;
+                  color:#333;
+                  padding: 10px 15px;             
+                }
+              }
+            }
+          }
+    }
+  }
+}
+
 //Error page
 .error_page {
   background-image: url(../img/404_bg.png);

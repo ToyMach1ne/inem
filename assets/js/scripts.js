@@ -41,3 +41,17 @@ $(document).ready(function(){
   });
 
 });
+
+//Teacher modal
+$('.modal_teacher').hide();
+$('.t_inner_wrap').on('click', function(event) {
+  $('.modal_teacher').fadeIn('400', function() {
+
+  });
+});
+$('.close_teacher').on('click', function(event) {
+  event.preventDefault();
+  $('.modal_teacher').fadeOut('400', function() {
+
+  });
+});

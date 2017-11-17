@@ -1796,6 +1796,7 @@ article {
     color: #444;
     padding-top: 50px;
     .left_panel {
+      padding-top: 45px;
       button {
             display: block;
             width: 100%;
@@ -1892,6 +1893,17 @@ article {
   }
 }
 
+.user_add {
+  .center_panel {
+    .form_wrap {
+      form {
+        .add_user {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
 footer {
   height: auto;
   padding-top: 30px;
